@@ -1,0 +1,33 @@
+.container2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    margin-left: 395px;
+    background-color: azure;
+}
+.li {
+    display: block;
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color:rebeccapurple;
+}
+a:visited {
+    color:blueviolet;
+}
+.burger::after {
+    content:"\2261";
+    padding-left: 40px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: 50px 50px 50px 50px 50px;
+                grid-template-rows: 50px 50px 50px 50px;
+                grid-gap: 10px;
+                padding-left: 520px;
+            }
+            div > div {
+                border: 2px inset black;
+            }
+            .unite1 {
+                grid-row: 2 / 4;
+                grid-column: 4 / 6;
+            }
+            .unite2 {
+                grid-row: 3 / 5;
+                grid-column: 1 / 3;
+            }
+        </style>
+        <link rel="stylesheet" href="style2a.css">
+    </head>
+    <body>
+        <div class="grid">
+            <div class="div1"><figcaption> Котик1</figcaption></div>
+            <div class="div2"><figcaption> Котик2<figcaption></div>
+            <div class="div3"><figcaption> Котик3</figcaption></div>
+            <div class="div4"><figcaption> Котик4</figcaption></div>
+            <div class="div5"><figcaption> Котик5</figcaption></div>
+            <div class="div6"><figcaption> Котик6</figcaption></div>
+            <div class="div7"><figcaption> Котик7</figcaption></div>
+            <div class="div8"><figcaption> Котик8</figcaption></div>
+            <div class="unite1 div9"><figcaption style="position: relative; top: 105px; left: 30px;"> Котик9</figcaption></div>
+            <div class="unite2"><img src="images/cat10.jpg"><span>Котики - самое лучшее, что есть на свете</span><figcaption  style="position: relative;top: -3px; left: 30px;"> Котик10</figcaption></div>
+            <div class="div11"><figcaption> Котик11</figcaption></div>
+            <div class="div12"><figcaption> Котик12</figcaption></div>
+            <div class="div13"><figcaption> Котик13</figcaption></div>
+            <div class="div14"><figcaption> Котик14</figcaption></div>
+        </div>
+    </body>
+</html>

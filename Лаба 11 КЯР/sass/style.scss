@@ -1,0 +1,118 @@
+$font_col2: bisque;
+$space: 20px;
+$width1: 700px;
+$width2: 200px;
+$width3: 150px;
+$width4: 95%;
+$width5: 30%;
+$font-size: 15px;
+@function double($width1, $width2) {
+    @if ($width1 > $width2) and ($width1 > $width3) {
+        @return $font-size * 2;
+    }
+    @return $font-size;
+}
+%background-color {
+    background-color:burlywood;
+}
+%color {
+    color: crimson;
+}
+@mixin align {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-left: $space;
+    height: 600px;
+    margin-top: -2 * $space;
+    border: none;
+}
+    div {
+        background-color: $font_col2;
+        border: 2px solid;
+    }
+    .conteiner {
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        height: 950px;
+        margin: 0 auto;
+        background-color:rgb(154, 153, 153);
+        background-color:bisque;
+        .conteiner1 {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            height: 100px;
+            margin: $space auto;
+            background-color: lightslategray;
+            div {
+                width: 170px;
+                height: 40px;
+                align-self: center;
+            }
+            .nav {
+                width: 200px;
+                height: 60px;
+                margin-right: 50px;
+            }
+        }
+        .conteiner2 {
+            width: 55%;
+            @extend %background-color;
+            @include align;
+            .article {
+                width: $width1;
+                height: 50px;
+                font-size: double();
+            }
+            .div2 {
+                width: $width2;
+                height: 190px;
+            }
+                @for $i from 2 through 3 {
+                    .div#{$i} { $width3: $width2 - 50px;}
+                }
+            .div3 {
+                width: $width3;
+                height: 140px;
+            }
+        }
+        @function double($width4, $width5) {
+            @if ($width4 > $width5) {
+                $font-size: $font-size * 2;
+            }
+            @return $font-size;
+        }
+        .conteiner3 {
+            width: 40%;
+            @extend %background-color;
+            @include align;
+            .div1 {
+                width: 95%;
+                height: 190px;
+            }
+            .article {
+                width: $width4;
+                height: 50px;
+                font-size: $font-size;
+            }
+            .div3 {
+                width: $width5;
+                height: 100px;
+            }
+            .div4 {
+                width: 60%;
+                height: 100px;
+            }
+        }
+    }
+    body {
+        background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-01/1674328497_catherineasquithgallery-com-p-serii-fon-s-razvodami-fon-foto-169.jpg);
+        text-align: center;
+    }
+    span {
+        @extend %color;
+    }
+    

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link href="css/normal.css" rel="stylesheet">
+        <link href="css/1280px.css" rel="stylesheet" media="(max-width: 1280px)">
+        <link href="css/1280pxgreen.css" rel="stylesheet" media="(min-width: 729px) and (max-width: 1280px)">
+        <style>
+            @import url(css/728px.css) (min-width: 481px) and (max-width: 728px);
+            @import url(css/small.css) (max-width: 480px);
+            @media (max-width: 480рх) {
+            div > figcaption {
+                color: red;
+            }
+            }
+            .container1 {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: space-between;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 1100px;
+                height: 855px;
+                margin: auto;
+                padding: 20px;
+                background-color: azure;
+            }
+            .div1 {
+                align-self: flex-start;
+                flex: 1 1 1000px;
+                border: 4px solid black;
+                height: 200px;
+                text-align: center;
+                background-color: beige;
+            }
+            .div2 {
+                align-self: flex-end;
+                flex: 0 1 350px;
+                border: 4px solid black;
+                height: 510px;
+                padding-bottom: 100px;
+                align-self: flex-start;
+                position:relative;
+                background-color: aquamarine;
+                font-size: 1.3em;
+                vertical-align: middle;
+            }
+            body {
+                background-color: bisque;
+                margin-left: 0.5%;
+            }
+            audio {
+                display: flex;
+                padding: 30px;
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="div1"><h1>Задание 1</h1><h1>Коты как смысл жизни</h1></div>
+            <div class="div2">
+            <video width="350" height="200" controls style="position: relative; top: -2px;"><source src="video/video1.mp4" type="video/mp4"></video>
+            <video width="350" height="200" controls><source src="video/video2.mp4" type="video/mp4"></video>
+            <video width="350" height="200" controls><source src="video/video3.mp4" type="video/mp4"></video>
+            </div>
+            <div class="div2">Flexbox — это общее название для модуля Flexible Box Layout, который имеется в CSS3. Данный модуль определяет особый режим верстки пользовательского интерфейса,
+                 который называется flex layout. В этом плане Flexbox предоставляет иной подход к созданию пользовательского интерфейса, который отличается от табличной или блочной верстки.
+                Его создали, чтобы удобно и быстро распределять и выравнивать элементы. Развернутое описание стандарта по модулю можно посмотреть в спецификации.
+                Основными составляющими компоновки flexbox являются flex-контейнер (flex container) и flex-элементы (flex items). Flex container представляет некоторый элемент, внутри которого размещены flex-элементы.
+                Flexbox управляет пустотой вокруг вложенных контейнеров! Таким образом, margin: auto центрирует дочерние элементы по вертикали и горизонтали.</div>
+            <div class="div2">
+                <audio controls><source src="audio/audio1.mp3" type="audio/mp3"></audio>
+                <audio controls><source src="audio/audio2.mp3" type="audio/mp3"></audio>
+                <audio controls><source src="audio/audio3.mp3" type="audio/mp3"></audio>
+            </div>
+        </div>
+        <ul class="container2">
+        <li class="li burger">Собаки</li>  
+        <li class="li"><a href="https://meduza.io/feature/2017/02/26/kak-vybrat-sobaku?ysclid=loumwxbwyc863412395">Сайт первый</a></li>  
+        <li class="li"><a href="https://www.nur.kz/household/pets/2033376-krasivye-porody-sobak-top-10-samyh-privlekatelnyh-i-milyh-psov/?ysclid=loumt7bfnx177379022">Сайт второй</a></li>  
+        <li class="li"><a href="https://pixabay.com/ru/images/search/%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0/">Сайт третий</a></li>  
+        <li class="li"><a href="https://lapkins.ru/dog/">Сайт четвёртый</a></li>  
+        </ul>
+        <div class="cat">
+        <div class="row">
+        <div class="cat1"><figcaption>Котик 1</figcaption></div>
+        <div class="cat2"><figcaption>Котик 2</figcaption></div>
+        <div class="cat3"><figcaption>Котик 3</figcaption></div>
+        <div class="cat4"><figcaption>Котик 4</figcaption></div>
+        </div>
+        <div class="row">
+        <div class="cat5"><figcaption>Котик 5</figcaption></div>
+        <div class="cat6"><figcaption>Котик 6</figcaption></div>
+        <div class="cat7"><figcaption>Котик 7</figcaption></div>
+        <div class="cat8"><figcaption>Котик 8</figcaption></div>
+        </div>
+        </div>
+    </body>
+</html>

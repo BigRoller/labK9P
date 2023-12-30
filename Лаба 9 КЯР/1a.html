@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .grid {
+                display: grid;
+                grid-template-areas: 
+                "x y z";
+                grid-template-columns: 30px 160px 160px;
+                grid-template-rows: 300px;
+                grid-gap: 10px;
+                margin-left: 380px;
+            }
+            div > div {
+                border: 1px inset black;
+                text-align: center;
+                padding-left: 4px;
+                word-spacing: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: x; writing-mode: vertical-lr; text-orientation: upright;">HTML5 и CSS3</div>
+            <div style="grid-area: y; padding-top: 20px;">Давайте начнем с самого начала. HTML (Hyper-Text Markup Language, язык гипертекстовой разметки) технически не является языком программирования. Вместо этого он начинался как способ отображения текста, изображений и других типов данных.</div>
+            <div style="grid-area: z; padding-top: 2px;">Со временем был разработан и дополнен стандарт, чтобы расширить возможности HTML. Эти изменения привели к серьезному пересмотру спецификации HTML. Последней спецификацией, которая была выпущена консорциумом W3C, является HTML5.</div>
+        </div>
+    </body>
+</html>

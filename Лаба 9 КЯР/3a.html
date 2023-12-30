@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                text-align: center;
+                word-spacing: 3px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .grid {
+                display: grid;
+                grid-template-areas: 
+                "x y y"
+                "x y1 z"
+                "x1 x1 x1";
+                grid-gap: 10px;
+                grid-template-columns: 80px 160px 120px;
+                grid-template-rows: 40px 160px 80px;
+            }
+            div > div {
+                border: 2px inset black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: x; writing-mode: vertical-lr; text-orientation: upright; padding-left: 30px;"><a href="https://ghostbasenji.github.io/post/html-css-part-1/">ресурсы</a></div>
+            <div style="grid-area: y;  padding-top: 10px;">HTML5 и CSS3</div>
+            <div style="grid-area: y1;">HTML (Hyper-Text Markup Language, язык гипертекстовой разметки) технически не является языком программирования.</div>
+            <div style="grid-area: z;">CSS (Cascading Style Sheets, Каскадные таблицы стилей) – это способ изменять внешний вид HTML-страницы.
+         </div>
+            <div style="grid-area: x1; padding-top: 10px;">Чемурако Иван Олегович, 1-8, 18 лет, +375 (29) 593-26-07,
+             gloray228prosti@gmail.com, живу в общаге БГТУ 1</div>
+        </div>
+    </body>
+</html>

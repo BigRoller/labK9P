@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: 320px 320px 80px;
+                grid-template-rows: 200px 200px;
+                grid-gap: 10px;
+                margin-left: 380px;
+            }
+            div > div {
+                border: 1px inset black;
+                text-align: center;
+                padding-left: 4px;
+                word-spacing: 3px;
+            }
+            .unite1 {
+                grid-row: 1/3;
+                grid-column: 3/4;
+                border: 1px inset black;
+                padding-left: 9px;
+            }
+            .unite2 {
+                grid-row: 1/3;
+                grid-column: 1/2;
+                border: 1px inset black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="unite2" style="padding-top: 3px;"> Так же, как и HTML, CSS прошел через множество итераций. Также, как и спецификация HTML, спецификация CSS поддерживается W3C.
+                CSS был разработан для того, чтобы отделить дизайн от контента. Контент помещается в HTML, а CSS придает этому контенту привлекательный вид.
+            </div>
+            <div style="padding-top: 20px;">CSS (Cascading Style Sheets, Каскадные таблицы стилей) – это способ изменять внешний вид HTML-страницы. </div>
+            <div class="unite1" style="writing-mode: vertical-lr; text-orientation: upright">HTML5 и CSS3</div>
+            <div style="padding-top: 10px;">  На самом деле, CSS необязательно применять только к HTML, но это, безусловно, его основное применение.</div>
+        </div>
+    </body>
+</html>

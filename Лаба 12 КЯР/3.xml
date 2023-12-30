@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<main xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="3.xsd">
+    <rows>
+        <article>Товары:</article>
+        <product>Кресло-качалка</product>
+        <product>Руль с изумрудным ободом</product>
+        <product>Ушки кролика для мальчиков</product>
+        <product>Вкусные Pringles</product>
+        <product>Смачныя цукерки</product>
+    </rows>
+</main>

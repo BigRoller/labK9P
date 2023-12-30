@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                text-align: center;
+                word-spacing: 3px;
+                text-decoration: none;
+            }
+            .grid {
+                display: grid;
+                grid-template-areas: 
+                "x y y"
+                "x y1 z"
+                "x1 x1 x1";
+                grid-gap: 10px;
+                grid-template-columns: 80px 160px 120px;
+                grid-template-rows: 40px 160px 80px;
+                padding-left: 500px;
+            }
+            div > div {
+                border: 2px inset black;
+            }
+            .unite1 {
+                grid-row: 1 / 3;
+                grid-column: 1 / 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: x; writing-mode: vertical-lr; text-orientation: upright; padding-left: 30px;"><a href="https://medium.com/@stasonmars/%D0%B2%D0%B5%CC%88%D1%80%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0-grid-%D0%B2-css-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%B8-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-220508316f8b">ресурсы</a></div>
+            <div style="grid-area: y; padding-top: 10px;">Grid-вёрстка</div>
+            <div style="grid-area: y1;"> Она идеально подходит для: шаблонов сайтов, форм, галерей и всего, что требует точного и отзывчивого позиционирования.</div>
+            <div style="grid-area: z; font-size: 15px;">CSS Grid это новая модель для создания шаблонов, оптимизированная для создания двумерных макетов.</div>
+            <div style="grid-area: x1; padding-top: 10px;">Чемурако Иван Олегович, 1-8, 18 лет, +375 (29) 593-26-07,
+             gloray228prosti@gmail.com, живу в общаге БГТУ 1</div>
+        </div>
+    </body>
+</html>

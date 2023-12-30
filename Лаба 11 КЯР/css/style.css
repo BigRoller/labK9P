@@ -1,0 +1,97 @@
+.conteiner .conteiner3, .conteiner .conteiner2 {
+  background-color: burlywood;
+}
+
+span {
+  color: crimson;
+}
+
+div {
+  background-color: bisque;
+  border: 2px solid;
+}
+
+.conteiner {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 950px;
+  margin: 0 auto;
+  background-color: rgb(154, 153, 153);
+  background-color: bisque;
+}
+.conteiner .conteiner1 {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 100px;
+  margin: 20px auto;
+  background-color: lightslategray;
+}
+.conteiner .conteiner1 div {
+  width: 170px;
+  height: 40px;
+  align-self: center;
+}
+.conteiner .conteiner1 .nav {
+  width: 200px;
+  height: 60px;
+  margin-right: 50px;
+}
+.conteiner .conteiner2 {
+  width: 55%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-left: 20px;
+  height: 600px;
+  margin-top: -40px;
+  border: none;
+}
+.conteiner .conteiner2 .article {
+  width: 700px;
+  height: 50px;
+  font-size: 15px;
+}
+.conteiner .conteiner2 .div2 {
+  width: 200px;
+  height: 190px;
+}
+.conteiner .conteiner2 .div3 {
+  width: 150px;
+  height: 140px;
+}
+.conteiner .conteiner3 {
+  width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-left: 20px;
+  height: 600px;
+  margin-top: -40px;
+  border: none;
+}
+.conteiner .conteiner3 .div1 {
+  width: 95%;
+  height: 190px;
+}
+.conteiner .conteiner3 .article {
+  width: 95%;
+  height: 50px;
+  font-size: 15px;
+}
+.conteiner .conteiner3 .div3 {
+  width: 30%;
+  height: 100px;
+}
+.conteiner .conteiner3 .div4 {
+  width: 60%;
+  height: 100px;
+}
+
+body {
+  background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-01/1674328497_catherineasquithgallery-com-p-serii-fon-s-razvodami-fon-foto-169.jpg);
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

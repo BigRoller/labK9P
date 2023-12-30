@@ -1,0 +1,26 @@
+main {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+rows {
+    display: block;
+    padding: 150px;
+    width: 200px;
+    background-color: cadetblue;
+    line-height: 45px;
+    margin: auto;
+    margin-top: 20px;
+}
+main > rows > product {
+    width: 300px;
+    display: block;
+    font-size: 22px;
+    color: bisque;
+}
+element, article {
+    display: block;
+    color: aqua;
+    font-size: 25px;
+    padding-left: 10%;
+}

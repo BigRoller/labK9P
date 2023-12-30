@@ -1,0 +1,19 @@
+.fit {
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-image: url(images/fit.jpg);
+}
+li {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: darkcyan;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    max-width: 100px;
+    max-height: 100px;
+    display: inline;
+}
